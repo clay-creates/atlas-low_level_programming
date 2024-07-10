@@ -9,7 +9,7 @@
  * Return: Return new node on success, NULL on fail
  */
 
-dlistint_t *insert_dnode_at_index(dlistint_t **h, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *newNode, *currentNode;
 	unsigned int i;
