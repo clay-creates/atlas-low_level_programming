@@ -7,18 +7,17 @@
  *
  * Return: Returns 1 on success, -1 on fail
  */
-
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *currentNode;
 	unsigned int i;
 
-	currentNode = *head;
-
-	if (*head == NULL)
+	if (head == NULL || *head == NULL)
 	{
 		return (-1);
 	}
+
+	currentNode = *head;
 
 	if (index == 0)
 	{
@@ -43,7 +42,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	if (currentNode->prev != NULL)
 	{
-		currentNode->prev->next = currentNode->prev;
+		currentNode->prev->next = currentNode->next;
 	}
 
 	if (currentNode->next != NULL)
