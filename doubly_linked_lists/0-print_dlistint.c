@@ -9,7 +9,6 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-    // Loop through list and print each value and setting active node to next
     while (h != NULL)
     {
         printf("%d\n", h->n);
