@@ -10,19 +10,19 @@
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-    dlistint_t *nodeToReturn;
-    unsigned int i;
+	dlistint_t *nodeToReturn;
+	unsigned int i;
 
-    nodeToReturn = head;
+	nodeToReturn = head;
 
-    if (head == NULL)
-    {
-        return (NULL);
-    }
+	if (head == NULL)
+	{
+		return (NULL);
+	}
 
-    for (i = 0; i < index && nodeToReturn != NULL; i++)
-    {
-        nodeToReturn = nodeToReturn->next;
-    }
-    return (nodeToReturn);
+	for (i = 0; i < index && nodeToReturn != NULL; i++)
+	{
+		nodeToReturn = nodeToReturn->next;
+	}
+	return (nodeToReturn);
 }
