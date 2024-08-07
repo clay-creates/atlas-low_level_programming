@@ -1,5 +1,12 @@
 #include "search_algos.h"
 
+/**
+ * print_array - Prints an array
+ * @array: Array to print
+ * @start: Starting point
+ * @end: Ending point
+ */
+
 void print_array(int *array, size_t start, size_t end)
 {
 	size_t i;
@@ -15,6 +22,15 @@ void print_array(int *array, size_t start, size_t end)
 	}
 	printf("\n");
 }
+
+/**
+ * binary_search - Searches for a value in an array using a binary search
+ * @array: Array to search in
+ * @size: Size of the array
+ * @value: Value to search for
+ *
+ * Return: The searched value or -1 on fail
+ */
 
 int binary_search(int *array, size_t size, int value)
 {
